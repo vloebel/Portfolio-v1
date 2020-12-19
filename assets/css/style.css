@@ -1,0 +1,18 @@
+:root {
+    /* Grid images are the same size except featured image
+    which is a multiple of the base size */
+    --feature-scale: 2; 
+    --grid-image-width: 300px;
+    --grid-image-height: 150;
+  }
+
+
+img {
+    width: var(--grid-image-width);
+    height: var(--grid-image-height);
+    } 
+
+.featured  img {
+    width: calc(var(--feature-scale)*var(--grid-image-width));
+    height: calc (var(--feature-scale)*var(--grid-image-width));
+}
