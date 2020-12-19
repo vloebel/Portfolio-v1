@@ -4,8 +4,6 @@
     --text-shadow1: lightblue;
     --primary-color: rgb(17, 51, 61);
     --secondary-color:white;
-/* unused? */
-    --tertiary-color: ##fce138;
 
     /* Image sizing     */
     /* Featured image is a multiple of base
@@ -15,7 +13,6 @@
     --grid-image-height: 150;
     ;
   }
-
 
   * {
     box-sizing: border-box;
@@ -35,13 +32,12 @@
 
   header {
     padding: 20px 35px;
-    /* background-color: var(--tertiary-color); */
-    display: flex; /* header is flexbox container */
+    display: flex; 
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky; /* supports safari */
+    position: -webkit-sticky; 
     position: sticky; 
-    top: 0;
+    top: 0; 
     background-image: url("../images/header-cropped.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -49,8 +45,8 @@
     z-index: 9999;
   }
 
-  /* header h1, h2, and nav are the items in container */
   header h1 {
+
     font-weight: bold;
     margin: 0;
     font-size: 36px;
@@ -58,13 +54,7 @@
     /* lighter shadow */
     text-shadow: 0 0 10px var(--text-shadow1);
   }
-  header h2 {
-    font-weight: bold;
-    font-size: 24px;
-    color: red;
-    }
     
-  
   header a {
     text-decoration: none;
     color: var(--text-color1);
@@ -73,16 +63,16 @@
   header nav {
     margin: 7px 0;
   }
-  
+  /* nested flexbox */
   header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     list-style: none;
   }
   
-  header nav ul li a {
+ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -97,6 +87,14 @@
     text-shadow: none;
   }
   
+   .tagline {
+    font-weight: bold;
+    font-size: 24px;
+    text-justify: center;
+    margin: 0 auto;
+    color: rgb(0, 255, 98);
+    }
+
   /* HEADER / NAVBAR STYLES END */
   
   
