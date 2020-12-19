@@ -87,26 +87,37 @@
     text-shadow: none;
   }
   
-   .tagline {
-    font-weight: bold;
-    font-size: 24px;
-    text-justify: center;
-    margin: 0 auto;
-    color: rgb(0, 255, 98);
-    }
+/* tagline position?? */
 
   /* HEADER / NAVBAR STYLES END */
   
-  
+  /* Articles are the flexbox for website content */
 
- 
+.article-container {
+  display:flex;
+  grid-template-columns: 200px 600px;
+
+}
+
+ /* Image grid */
 
 img {
     width: var(--grid-image-width);
     height: var(--grid-image-height);
     } 
 
-.featured  img {
+.featured-site  img {
     width: calc(var(--featured-scale)*var(--grid-image-width));
     height: calc (var(--featured-scale)*var(--grid-image-width));
+}
+.grid-wrapper {
+  display:grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 1em;
+}
+
+/* Featured site is twice as big */
+.featured-site{
+  grid-column: 1/ span 2;
+  grid-row: 1/ span 2;
 }
