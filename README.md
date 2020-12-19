@@ -3,7 +3,7 @@
 ## U of A Bootcamp, December 2020
 ### Vicky Loebel
 
-[https://vloebel.github.io/showcase/](https://vloebel.github.io/showcase/) 
+[https://vloebel.github.io/Portfolio//](https://vloebel.github.io/Portfolio/) 
 
 **Original Development by**
 Vicky Loebel  
