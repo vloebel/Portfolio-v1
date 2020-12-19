@@ -29,55 +29,57 @@
         
     </header>
 
-    <h2 class="tagline">Code with Style</h2>
+    <!-- <h2 class="tagline">Code with Style</h2> -->
     
-    <!-- Content sections -->
-    <div>
-        <!-- ABOUT ME -->
-        <section id="about-me">
+    <!-- Each article is a header + content -->
+    <!-- inside the flexbox -->
+    <div class="article-box">
+
+        <!-- ABOUT ME ROW -->
+        <article id="about-me">
             <h1>About Me</h1>
             <div>
                 I am a fish. I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish. I am Arnold Rimmer. I am a fish..
             </div>
+        </article>
 
-
-        </section>
-
-        <!-- Work - the portfolio grid -->
-        <section id="work">
+        <!-- WORK ROW -->
+        <!-- Second column holds the portfolio grid -->
+        <!-- featured image will be styled more prominantly -->
+        <article id="work">
             <h1>Work</h1>
-            <!-- Grid container for the images -->
-            <div class="featured"> 
-                <!-- <h2>Horiseon</h2>
-                <h3>HTML/CSS</h3> -->
-                <a href="https://vloebel.github.io/horiseon/"><img src="./assets/images/Horiseon-landing-page.jpg" alt="Horiseon services website"/> </a>
+            <div class="grid-wrapper"> 
+                <!-- the image grid -->
+                <div class="featured"> 
+                    <h2>Horiseon</h2>
+                    <h3>HTML/CSS</h3>
+                    <a href="https://vloebel.github.io/horiseon/"><img src="./assets/images/Horiseon-landing-page.jpg" alt="Horiseon services website"/> </a>
+                </div>
+                <div>
+                    <h2>Dozens of Doodles</h2>
+                    <h3>Doggo</h3>
+                    <img  src="./assets/images/Dozen-Doodles222.jpg" alt="Dozens of Doodles website"/>
+                </div>
+                <div>
+                    <h2>SeDonuts</h2>
+                    <h3>Sugar Query</h3>
+                    <img src="./assets/images/SeDonuts.jpg" alt="See Donuts website"/>
+                </div>
+                <div>
+                    <h2>Run Buddy</h2>
+                    <h3>HTML/CSS</h3>
+                    <a href="https://vloebel.github.io/run-buddy-02"> <img  src="./assets/images/Run-Buddy-landing-page.jpg" alt="Run Buddy website"/> </a>;
+                </div>
+                <div>
+                    <h2>"Tucson Sign Tours</h2>
+                    <h3> javascript</h3>
+                    <img  src="./assets/images/Tucson-Sign-Tours.jpg" alt="Tucson Sign Tours website"/>
+                </div>
             </div>
-            <div>
-                <h2>Dozens of Doodles</h2>
-                <h3>Doggo</h3>
-                <img  src="./assets/images/Dozen-Doodles222.jpg" alt="Dozens of Doodles website"/>
-            </div>
-            <div>
-                <h2>SeDonuts</h2>
-                <h3>Sugar Query</h3>
-                <img src="./assets/images/SeDonuts.jpg" alt="See Donuts website"/>
-            </div>
-            <div>
-                <h2>Run Buddy</h2>
-                <h3>HTML/CSS</h3>
-                <a href="https://vloebel.github.io/run-buddy-02"> <img  src="./assets/images/Run-Buddy-landing-page.jpg" alt="Run Buddy website"/> </a>;
-            </div>
-            <div>
-                <h2>"Tucson Sign Tours</h2>
-                <h3> javascript</h3>
-                <img  src="./assets/images/Tucson-Sign-Tours.jpg" alt="Tucson Sign Tours website"/>
-            </div>
-
-
-        </section>
+        </article>
         
         <!-- CONTACT ME -->
-        <section id="contact-me">
+        <article id="contact-me">
             <h1>Contact Me</h1>
             <div class="contact-info">
                 520 760-3300 <br/>
@@ -85,7 +87,7 @@
                 <a href="https://github.com/vloebel">GitHub</a> <br/>
                 <a href="https://www.linkedin.com/in/vicky-loebel-4832a6201/"></a>     <p>LinkedIn</p>
             </div>
-        </section>
+        </article>
         
     </div>
     
