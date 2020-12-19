@@ -1,4 +1,4 @@
-![Portfolio Logo](./assets/images/portfolio-logo.png)  
+![Portfolio Logo](./assets/images/Portfolio-Logo.png)  
 # Web Development Showcase
 ## U of A Bootcamp, December 2020
 ### Vicky Loebel
