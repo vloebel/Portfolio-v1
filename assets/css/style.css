@@ -1,11 +1,107 @@
 :root {
-    /* Grid images are the same size except featured image
-    which is a multiple of the base size */
-    --feature-scale: 2; 
+    /* document colors */
+    --text-color1: #022225;
+    --text-shadow1: lightblue;
+    --primary-color: rgb(17, 51, 61);
+    --secondary-color:white;
+/* unused? */
+    --tertiary-color: ##fce138;
+
+    /* Image sizing     */
+    /* Featured image is a multiple of base
+    image size */
+    --featured-scale: 2; 
     --grid-image-width: 300px;
     --grid-image-height: 150;
+    ;
   }
 
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    color: var(--text-color1);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+
+  /* HEADER AND NAVIGATION BAR START */
+  /* Note: this css is adapted from the Run-Buddy site
+   developed in modules 1 & 2 of the coding bootcamp */
+
+  header {
+    padding: 20px 35px;
+    /* background-color: var(--tertiary-color); */
+    display: flex; /* header is flexbox container */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky; /* supports safari */
+    position: sticky; 
+    top: 0;
+    background-image: url("../images/header-cropped.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+
+  /* header h1, h2, and nav are the items in container */
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: --var(--text-color1);
+    /* lighter shadow */
+    text-shadow: 0 0 10px var(--text-shadow1);
+  }
+  header h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: red;
+    }
+    
+  
+  header a {
+    text-decoration: none;
+    color: var(--text-color1);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* put a highlight around nav links on hover */
+  header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
+  /* HEADER / NAVBAR STYLES END */
+  
+  
+
+ 
 
 img {
     width: var(--grid-image-width);
@@ -13,6 +109,6 @@ img {
     } 
 
 .featured  img {
-    width: calc(var(--feature-scale)*var(--grid-image-width));
-    height: calc (var(--feature-scale)*var(--grid-image-width));
+    width: calc(var(--featured-scale)*var(--grid-image-width));
+    height: calc (var(--featured-scale)*var(--grid-image-width));
 }
