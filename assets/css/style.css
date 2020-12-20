@@ -107,20 +107,6 @@ header {
 }
   /* END HERO STYLES ************* */
 
-  /*  START IMAGE STYLES **********************/
-  /* featured image is multiple of normal size */
-  img {
-    width: var(--grid-image-width);
-    height: var(--grid-image-height);
-    } 
-
-.featured-site  img {
-    width: calc(var(--featured-scale)*var(--grid-image-width));
-    height: calc (var(--featured-scale)*var(--grid-image-width));
-}
-  /* END IMAGE STYLES *************************/
-
-
   /* Articles are the flexbox for website content */
 
 .flexbox-container {
@@ -153,15 +139,6 @@ img.bio {
 
 
 
-
-
-/* Align img inside about me flexbox container */
-
-image.featured-site{
-  max-width:100%;
-  height:auto;
-}
-
  /* Image grid *************************/
 
 .grid-wrapper {
@@ -169,6 +146,20 @@ image.featured-site{
   grid-template-columns: 33% 33% 33%;
   gap: 1em;
 }
+
+ /*  START IMAGE STYLES **********************/
+  /* featured image is multiple of normal size */
+  img {
+    width: var(--grid-image-width);
+    height: var(--grid-image-height);
+    } 
+
+.featured-site  img {
+    width: calc(var(--featured-scale)*var(--grid-image-width));
+    height: calc (var(--featured-scale)*var(--grid-image-width));
+}
+  /* END IMAGE STYLES *************************/
+
 
 /* Featured site is twice as big */
 .featured-site{
