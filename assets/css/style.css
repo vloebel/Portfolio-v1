@@ -144,11 +144,21 @@ header {
   flex: 3;
 }
 
-/* Align img inside about me flexbox container */
-.flexbox-container img{
+img.bio {
   float:left;
   margin:0 10px 10px 0;
   max-width:30%;
+  height:auto;
+}
+
+
+
+
+
+/* Align img inside about me flexbox container */
+
+image.featured-site{
+  max-width:100%;
   height:auto;
 }
 
