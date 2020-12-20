@@ -136,6 +136,7 @@ header {
   color: var(--text-color1);
   font-size: 2em;
   flex: 1;
+  /* text-align: right; */
 }
 
 .flexbox-container div {
@@ -143,12 +144,20 @@ header {
   flex: 3;
 }
 
+/* Align img inside about me flexbox container */
+.flexbox-container img{
+  float:left;
+  margin:0 10px 10px 0;
+  max-width:30%;
+  height:auto;
+}
+
  /* Image grid *************************/
 
 .grid-wrapper {
   display:grid;
   grid-template-columns: 33% 33% 33%;
-  grid-gap: 1em;
+  gap: 1em;
 }
 
 /* Featured site is twice as big */
