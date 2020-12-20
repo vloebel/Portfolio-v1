@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VL01-Portfolio</title>
 </head>
+
 <body>
     <!-- Navigation section -->
     <header>
@@ -25,30 +26,28 @@
                 <a href="#contact-me">Contact me</a>
               </li>               
             </ul>
-        </nav>
-        
+        </nav>        
     </header>
 
-    <!-- <h2 class="tagline">Code with Style</h2> -->
+    <!-- <section class="hero">
+        <h2>Code with (future) Style</h2>
+        could not get this working
+        </section> -->
     
-    <!-- Each article is a header + content -->
-    <!-- inside the flexbox -->
-    <div class="article-container">
-
-        <!-- ABOUT ME ROW -->
-        <article id="about-me" class="article-item">
-            <h1>About Me</h1>
-            <div>
-                I am a fish. I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.
-            </div>
-        </article>
+    <!-- Each article is its own flexbox -->
+    
+    <article id="about" class="flexbox-container">
+        <h1>About Me</h1>
+        <div>
+            I am a fish. I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.I am a fish.
+        </div>
+    </article>
 
         <!-- WORK ROW -->
         <!-- Second column holds the portfolio grid -->
-        <!-- featured image will be styled more prominantly -->
-        <article id="work" class="article-item">
-            <h1>Work</h1>
-            <div class="grid-wrapper"> 
+    <article id="work" class="flexbox-container">
+        <h1>Work</h1>
+        <div class="grid-wrapper"> 
                 <!-- the image grid -->
                 <div class="featured-site"> 
                     <h2>Horiseon</h2>
@@ -75,21 +74,20 @@
                     <h3> javascript</h3>
                     <img  src="./assets/images/Tucson-Sign-Tours.jpg" alt="Tucson Sign Tours website"/>
                 </div>
-            </div>
-        </article>
+        </div>
+    </article>
         
-        <!-- CONTACT ME -->
-        <article id="contact-me" class="article-item">
-            <h1>Contact Me</h1>
-            <div class="contact-info">
-                520 760-3300 <br/>
-                <a href="https://vickyloebel.com/wp/">Vicky Loebel.com</a> <br/>
-                <a href="https://github.com/vloebel">GitHub</a> <br/>
-                <a href="https://www.linkedin.com/in/vicky-loebel-4832a6201/"></a>     <p>LinkedIn</p>
-            </div>
-        </article>
+    <!-- CONTACT INFO -->
+    <article id="contact-me" class="flexbox-container">
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+            520 760-3300 <br/>
+            <a href="https://vickyloebel.com/wp/">Vicky Loebel.com</a> <br/>
+            <a href="https://github.com/vloebel">GitHub</a> <br/>
+            <a href="https://www.linkedin.com/in/vicky-loebel-4832a6201/"></a> <p>LinkedIn</p>
+        </div>
+    </article>
         
-    </div>
-    
+        
 </body>
 </html>

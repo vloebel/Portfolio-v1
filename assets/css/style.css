@@ -19,7 +19,6 @@
     margin: 0;
     padding: 0;
   }
-
   body {
     color: var(--text-color1);
     font-family: Helvetica, Arial, sans-serif;
@@ -40,6 +39,7 @@
     top: 0; 
     background-image: url("../images/header-cropped.jpg");
     background-size: cover;
+    background-color:var(--text-color1);
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
@@ -72,7 +72,7 @@
     list-style: none;
   }
   
- header nav ul li a {
+  header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -88,20 +88,22 @@
   }
   
 /* tagline position?? */
+/* Hero Style Start - cannot get this */
+/* .hero {
+  background-image: url("../images/header-cropped.jpg");
+  height: 300px;
+  text-align: right; */
+  /* background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+ Hero Style End */
+
 
   /* HEADER / NAVBAR STYLES END */
-  
-  /* Articles are the flexbox for website content */
 
-.article-container {
-  display:flex;
-  grid-template-columns: 200px 600px;
-
-}
-
- /* Image grid */
-
-img {
+  /*  IMAGE STYLES */
+  img {
     width: var(--grid-image-width);
     height: var(--grid-image-height);
     } 
@@ -110,6 +112,36 @@ img {
     width: calc(var(--featured-scale)*var(--grid-image-width));
     height: calc (var(--featured-scale)*var(--grid-image-width));
 }
+  
+  /* Articles are the flexbox for website content */
+
+.flexbox-container {
+  display:flex;
+  width:1000px;
+  flex-direction:row;
+  flex-wrap: wrap;
+  
+}
+
+ .flexbox-container h1 {
+  color: red;
+  flex: 1;
+}
+
+.flexbox-container article {
+  color:blue;
+  flex: 2;
+}
+
+
+
+
+
+
+
+
+ /* Image grid */
+
 .grid-wrapper {
   display:grid;
   grid-template-columns: 33% 33% 33%;
