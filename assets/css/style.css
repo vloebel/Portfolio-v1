@@ -9,44 +9,43 @@
     /* Featured image is a multiple of base
     image size */
     --featured-scale: 2; 
-    --grid-image-width: 300px;
-    --grid-image-height: 150;
-    ;
+    --grid-image-width: 150px;
+    --grid-image-height: 75;
+    
   }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    color: var(--text-color1);
-    font-family: Helvetica, Arial, sans-serif;
-  }
-
-
-  /* HEADER AND NAVIGATION BAR START */
-  /* Note: this css is adapted from the Run-Buddy site
-   developed in modules 1 & 2 of the coding bootcamp */
-
-  header {
-    padding: 20px 35px;
-    display: flex; 
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: -webkit-sticky; 
-    position: sticky; 
-    top: 0; 
-    background-image: url("../images/header-cropped.jpg");
-    background-size: cover;
-    background-color:var(--text-color1);
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
-  }
-
-  header h1 {
-
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      color: var(--text-color1);
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    
+    /* HEADER AND NAVIGATION BAR START */
+    /* Note: this css is adapted from the Run-Buddy site
+    developed in modules 1 & 2 of the coding bootcamp */
+    
+    header {
+      padding: 20px 35px;
+      background-color:var(--text-color1);
+      display: flex; 
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: -webkit-sticky; 
+      position: sticky; 
+      top: 0; 
+      background-image: url("../images/header-cropped.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: 80%;
+      z-index: 9999;
+    }
+    
+    header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
@@ -63,7 +62,7 @@
   header nav {
     margin: 7px 0;
   }
-  /* nested flexbox */
+  /* nested nav flexbox */
   header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -87,20 +86,29 @@
     text-shadow: none;
   }
   
-/* tagline position?? */
-/* Hero Style Start - cannot get this */
-/* .hero {
+  /* HEADER AND NAVIGATION BAR STYLES END *** */
+  
+  /* HERO STYLES START */
+  /* the background image here overlaps */
+  /* the same image in header, allowing this to  */
+  /* scroll up while the header stays in place */
+  .hero {
   background-image: url("../images/header-cropped.jpg");
-  height: 300px;
-  text-align: right; */
-  /* background-size: cover;
-  background-position: center;
-  position: relative; 
+  background-size: cover;
+  display: flex; 
+  justify-content: flex-end; 
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
- Hero Style End */
 
-
-  /* HEADER / NAVBAR STYLES END */
+.hero h2 {
+  padding: 3em 6em 1em 3em;
+  color: var(--primary-color);
+  font-weight: lighter;
+}
+  /* HERO STYLES END */
 
   /*  IMAGE STYLES */
   img {
@@ -118,9 +126,10 @@
 .flexbox-container {
   display:flex;
   width:1000px;
+  margin:1.5vw;
   flex-direction:row;
   flex-wrap: wrap;
-  
+  justify-content: flex-end;
 }
 
  .flexbox-container h1 {
@@ -128,15 +137,10 @@
   flex: 1;
 }
 
-.flexbox-container article {
+.flexbox-container div {
   color:blue;
-  flex: 2;
+  flex: 3;
 }
-
-
-
-
-
 
 
 
