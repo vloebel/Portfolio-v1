@@ -1,54 +1,52 @@
 :root {
-    /* document colors */
-    --text-color1: #022225;
-    --text-shadow1: lightblue;
-    --primary-color: rgb(17, 51, 61);
-    --secondary-color:white;
+  /* document colors */
+  --text-color1: #022225;
+  --text-shadow1: lightblue;
+  --primary-color: rgb(17, 51, 61);
+  --secondary-color:white;
 
-    /* Image sizing     */
-    /* Featured image is a multiple of base
-    image size */
-    --featured-scale: 2; 
-    --grid-image-width: 150px;
-    --grid-image-height: 75;
+  /* Image size multipliers     */
+  /* for scaling featured image */
+
+  --featured-scale: 2; 
+  --grid-image-width: 150px;
+  --grid-image-height: 75;
+}
+  /* Basic defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--text-color1);
+  font-family: Helvetica, Arial, sans-serif;
+}
     
+  /* HEADER AND NAVIGATION BAR STYLES     */
+  /* adapted directly from Run-Buddy site */
+  /* UA coding bootcamp                   */
+  
+header {
+    padding: 20px 35px;
+    background-color:var(--text-color1);
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky; 
+    position: sticky; 
+    top: 0; 
+    background-image: url("../images/header-cropped.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
   }
-    
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      color: var(--text-color1);
-      font-family: Helvetica, Arial, sans-serif;
-    }
-    
-    
-    /* HEADER AND NAVIGATION BAR START */
-    /* Note: this css is adapted from the Run-Buddy site
-    developed in modules 1 & 2 of the coding bootcamp */
-    
-    header {
-      padding: 20px 35px;
-      background-color:var(--text-color1);
-      display: flex; 
-      justify-content: space-between;
-      flex-wrap: wrap;
-      position: -webkit-sticky; 
-      position: sticky; 
-      top: 0; 
-      background-image: url("../images/header-cropped.jpg");
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: 80%;
-      z-index: 9999;
-    }
-    
-    header h1 {
+  
+  header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
+    font-size: 2.5em;
     color: --var(--text-color1);
     /* lighter shadow */
     text-shadow: 0 0 10px var(--text-shadow1);
@@ -68,7 +66,7 @@
     flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
-    list-style: none;
+    list-style: none; 
   }
   
   header nav ul li a {
@@ -86,13 +84,13 @@
     text-shadow: none;
   }
   
-  /* HEADER AND NAVIGATION BAR STYLES END *** */
+  /* END HEADER AND NAVIGATION BAR STYLES */
   
-  /* HERO STYLES START */
-  /* the background image here overlaps */
-  /* the same image in header, allowing this to  */
-  /* scroll up while the header stays in place */
-  .hero {
+  /* START HERO STYLES  ************************  */
+  /* the background image  overlaps  the same     */
+  /* image in header, allowing this to magically  */
+  /* scroll up while the header stays in place    */
+.hero {
   background-image: url("../images/header-cropped.jpg");
   background-size: cover;
   display: flex; 
@@ -106,11 +104,11 @@
 .hero h2 {
   padding: 3em 6em 1em 3em;
   color: var(--primary-color);
-  font-weight: lighter;
 }
-  /* HERO STYLES END */
+  /* END HERO STYLES ************* */
 
-  /*  IMAGE STYLES */
+  /*  START IMAGE STYLES **********************/
+  /* featured image is multiple of normal size */
   img {
     width: var(--grid-image-width);
     height: var(--grid-image-height);
@@ -120,7 +118,9 @@
     width: calc(var(--featured-scale)*var(--grid-image-width));
     height: calc (var(--featured-scale)*var(--grid-image-width));
 }
-  
+  /* END IMAGE STYLES *************************/
+
+
   /* Articles are the flexbox for website content */
 
 .flexbox-container {
@@ -129,11 +129,14 @@
   margin:1.5vw;
   flex-direction:row;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  /* align-content: flex-end;
+  justify-content: flex-end; */
 }
 
- .flexbox-container h1 {
-  color: red;
+.flexbox-container h1 {
+  justify-content: flex-end;
+  color: var(--text-color1);
+  font-size: 2em;
   flex: 1;
 }
 
@@ -142,9 +145,7 @@
   flex: 3;
 }
 
-
-
- /* Image grid */
+ /* Image grid *************************/
 
 .grid-wrapper {
   display:grid;
@@ -156,4 +157,21 @@
 .featured-site{
   grid-column: 1/ span 2;
   grid-row: 1/ span 2;
+}
+
+/* ********* CONTACT INFO STYLES ************/
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; 
+  justify-content:space-between;
+}
+
+.contact-info li  {
+  /* padding: 10px 15px; */
+  flex: 2; 
+  justify-content:space-between;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: underline;
 }
