@@ -129,12 +129,10 @@ header {
   margin:1.5vw;
   flex-direction:row;
   flex-wrap: wrap;
-  /* align-content: flex-end;
-  justify-content: flex-end; */
+  align-items: center;
 }
 
 .flexbox-container h1 {
-  justify-content: flex-end;
   color: var(--text-color1);
   font-size: 2em;
   flex: 1;
@@ -164,13 +162,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   list-style: none; 
-  justify-content:space-between;
+  justify-content:space-around;
 }
 
 .contact-info li  {
   /* padding: 10px 15px; */
-  flex: 2; 
-  justify-content:space-between;
+  flex: 2;
+  color: var(--text-color1);
   font-weight: bold;
   font-size: 1em;
   text-decoration: underline;
