@@ -84,12 +84,13 @@ header {
     text-shadow: none;
   }
   
-  /* END HEADER AND NAVIGATION BAR STYLES */
+  /* end header and nav bar styles  */
   
   /* START HERO STYLES  ************************  */
   /* the background image  overlaps  the same     */
   /* image in header, allowing this to magically  */
   /* scroll up while the header stays in place    */
+
 .hero {
   background-image: url("../images/header-cropped.jpg");
   background-size: cover;
@@ -105,9 +106,9 @@ header {
   padding: 3em 6em 1em 3em;
   color: var(--primary-color);
 }
-  /* END HERO STYLES ************* */
+  /* end hero styles********** */
 
-  /* Articles are the flexbox for website content */
+  /* ARTICLES ARE FLEXBOX ROWS */
 
 .flexbox-container {
   display:flex;
@@ -137,9 +138,8 @@ img.bio {
   height:auto;
 }
 
-
-
- /* Image grid *************************/
+/* IMAGE GRID IS SECOND CHILD OF */
+/* FLEXBOX "WORK ROW" ************/
 
 .grid-wrapper {
   display:grid;
@@ -148,7 +148,7 @@ img.bio {
 }
 
  /*  START IMAGE STYLES **********************/
-  /* featured image is multiple of normal size */
+ /* featured image is multiple of normal size */
   img {
     width: var(--grid-image-width);
     height: var(--grid-image-height);
