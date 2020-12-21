@@ -144,33 +144,62 @@ img.bio {
   display:grid;
   grid-template-columns: 33% 33% 33%;
   gap: 1em;
-  position: relative;
+  
 }
 
-/* ********* GRID IMAGES ********** */
+/* GRID IMAGES & HEADERS */
 /* Featured site  takes multiple */
-/*  Columns and rows */
+/* Columns and rows */
 
 .featured-site{
   grid-column: 1/ span 2;
   grid-row: 1/ span 2;
+  position: relative;
+  width:100%;
 }
 
-img.site-img  {
-  width: 100%
+.another-site {
+  position:relative;
+  width: 100%;
+}
+
+/* position text over images */
+
+.featured-site h2 {
+  position:absolute;
+  bottom: 2em;
+  width: 100%;
+}
+
+.another-site h2 {
+  position:absolute;
+  bottom: 2em;
+  width: 100%;
+  font-size:smaller;
+}
+
+.featured-site h2 span,
+.another-site h2 span {
+  color:white;
+  background: rgb(0, 0, 0); 
+  /* use solid black if opacity not supported */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
+}
+
+.featured-site h3{
+  position:absolute;
+  bottom: 7em;
+  width: 100%;
 }
 
 img.featured-site-img {
   width: 100%
 }
 
-.featured-site h2{
-  position:absolute;
-  bottom: 3em;
-  opacity: 70%;
-
+img.site-img  {
+  width: 100%
 }
-
 
 
 
