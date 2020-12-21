@@ -164,11 +164,17 @@ img.bio {
 }
 
 /* position text over images */
+/* feature site styled w larger text */
 
 .featured-site h2 {
   position:absolute;
-  bottom: 2em;
+  bottom: 1em;
   width: 100%;
+  /* this would be in span if it worked */
+  color:white;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
 }
 
 .another-site h2 {
@@ -176,22 +182,30 @@ img.bio {
   bottom: 2em;
   width: 100%;
   font-size:smaller;
-}
-
-.featured-site h2 span,
-.another-site h2 span {
+  /* this would be in span if it worked */
   color:white;
   background: rgb(0, 0, 0); 
-  /* use solid black if opacity not supported */
   background: rgba(0, 0, 0, 0.7);
   padding: 10px; 
 }
 
+/* remove for debug due to row overlap 
+ on either side of break in h2 elements
+.featured-site h2 span,
+.another-site h2 span {
+  color:white;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
+}
+****************/
+
+/* removed this element for debug 
 .featured-site h3{
   position:absolute;
   bottom: 7em;
   width: 100%;
-}
+} */
 
 img.featured-site-img {
   width: 100%
