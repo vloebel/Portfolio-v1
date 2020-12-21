@@ -127,7 +127,6 @@ header {
 }
 
 .flexbox-container div {
-  color:blue;
   flex: 3;
 }
 
@@ -145,6 +144,7 @@ img.bio {
   display:grid;
   grid-template-columns: 33% 33% 33%;
   gap: 1em;
+  position: relative;
 }
 
 /* ********* GRID IMAGES ********** */
@@ -163,6 +163,17 @@ img.site-img  {
 img.featured-site-img {
   width: 100%
 }
+
+.featured-site h2{
+  position:absolute;
+  bottom: 3em;
+  opacity: 70%;
+
+}
+
+
+
+
 /* ********* CONTACT INFO STYLES ********** */
 .contact-info {
   display: flex;
