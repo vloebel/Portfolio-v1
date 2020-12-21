@@ -134,7 +134,7 @@ header {
 img.bio {
   float:left;
   margin:0 10px 10px 0;
-  max-width:30%;
+  max-width:20%;
   height:auto;
 }
 
@@ -147,27 +147,23 @@ img.bio {
   gap: 1em;
 }
 
- /*  START IMAGE STYLES **********************/
- /* featured image is multiple of normal size */
-  img {
-    width: var(--grid-image-width);
-    height: var(--grid-image-height);
-    } 
+/* ********* GRID IMAGES ********** */
+/* Featured site  takes multiple */
+/*  Columns and rows */
 
-.featured-site  img {
-    width: calc(var(--featured-scale)*var(--grid-image-width));
-    height: calc (var(--featured-scale)*var(--grid-image-width));
-}
-  /* END IMAGE STYLES *************************/
-
-
-/* Featured site is twice as big */
 .featured-site{
   grid-column: 1/ span 2;
   grid-row: 1/ span 2;
 }
 
-/* ********* CONTACT INFO STYLES ************/
+img.site-img  {
+  width: 100%
+}
+
+img.featured-site-img {
+  width: 100%
+}
+/* ********* CONTACT INFO STYLES ********** */
 .contact-info {
   display: flex;
   flex-wrap: wrap;
