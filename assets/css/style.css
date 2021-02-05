@@ -4,6 +4,8 @@
   --text-color1:rgb(17, 51, 61);
 
   --text-shadow1: lightblue;
+  --grid-shadow: lightgray;
+  --grid-background:white;
   --primary-color: rgb(17, 51, 61);
   --border-color: rgb(17, 51, 61);
   --secondary-color:white;
@@ -163,11 +165,16 @@ img.bio {
   grid-row: 1/ span 2;
   position: relative;
   width:100%;
+  border: 2px solid var(--grid-shadow);
+  background-color:var(--grid-background);
 }
 
 .another-site {
   position:relative;
   width: 100%;
+  border: 2px solid var(--grid-shadow);
+  background-color:var(--grid-background);
+
 }
 
 
@@ -176,7 +183,7 @@ img.bio {
 
 .featured-site > h2 {
   position:absolute;
-  font-size:1.5em;
+  font-size:1.25em;
   font-weight:lighter;
   bottom: 1em;
   width: 100%;
