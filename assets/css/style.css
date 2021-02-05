@@ -1,8 +1,11 @@
 :root {
   /* document colors */
-  --text-color1: #022225;
+  /* --text-color1: #022225; */
+  --text-color1:rgb(17, 51, 61);
+
   --text-shadow1: lightblue;
   --primary-color: rgb(17, 51, 61);
+  --border-color: rgb(17, 51, 61);
   --secondary-color:white;
 
   /* Image size multipliers     */
@@ -58,7 +61,7 @@ header {
   }
   
   header nav {
-    margin: 7px 0;
+    margin: .6rem 0;
   }
   /* nested nav flexbox */
   header nav ul {
@@ -88,7 +91,7 @@ header {
   
   /* START HERO STYLES  ************************  */
   /* the background image  overlaps  the same     */
-  /* image in header, allowing this to magically  */
+  /* image in header, allowing this to   */
   /* scroll up while the header stays in place    */
 
 .hero {
@@ -112,22 +115,26 @@ header {
 
 .flexbox-container {
   display:flex;
-  width:1000px;
-  margin:1.5vw;
-  flex-direction:row;
-  flex-wrap: wrap;
+  margin:1.5rem;
+  width:90%;
+  flex-flow:row wrap;
   align-items: center;
+
 }
 
 .flexbox-container h1 {
   color: var(--text-color1);
+  margin: 1rem;
+  margin-right: 2rem;
   font-size: 2em;
+  text-align: right;
   flex: 1;
-  /* text-align: right; */
 }
 
-.flexbox-container div {
+.flexbox-container > div {
   flex: 3;
+  border-left:2px solid var(--border-color); 
+  padding-left:2rem;
 }
 
 img.bio {
@@ -163,11 +170,14 @@ img.bio {
   width: 100%;
 }
 
+
 /* position text over images */
 /* feature site styled w larger text */
 
-.featured-site h2 {
+.featured-site > h2 {
   position:absolute;
+  font-size:1.5em;
+  font-weight:lighter;
   bottom: 1em;
   width: 100%;
   /* this would be in span if it worked */
@@ -182,30 +192,22 @@ img.bio {
   bottom: 2em;
   width: 100%;
   font-size:smaller;
-  /* this would be in span if it worked */
   color:white;
   background: rgb(0, 0, 0); 
   background: rgba(0, 0, 0, 0.7);
   padding: 10px; 
 }
 
-/* remove for debug due to row overlap 
- on either side of break in h2 elements
-.featured-site h2 span,
-.another-site h2 span {
+.featured-site a {
   color:white;
-  background: rgb(0, 0, 0); 
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px; 
+  text-decoration:none;
 }
-****************/
 
-/* removed this element for debug 
-.featured-site h3{
-  position:absolute;
-  bottom: 7em;
-  width: 100%;
-} */
+.another-site a {
+  color:white;
+  text-decoration:none;
+}
+
 
 img.featured-site-img {
   width: 100%
