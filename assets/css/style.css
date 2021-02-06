@@ -180,7 +180,7 @@ img.bio {
 
 .featured-site > h2 {
   position:absolute;
-  font-size:1.25em;
+  font-size:1em;
   font-weight:lighter;
   bottom: 1em;
   width: 100%;
@@ -195,7 +195,7 @@ img.bio {
   position:absolute;
   bottom: 2em;
   width: 100%;
-  font-size:smaller;
+  font-size:0.8em;
   color:white;
   background: rgb(0, 0, 0); 
   background: rgba(0, 0, 0, 0.7);
@@ -234,9 +234,10 @@ img.site-img  {
 .contact-info li  {
   /* padding: 10px 15px; */
   flex: 1;
+  flex-basis: content;
   color: var(--text-color1);
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 li a {
   text-decoration:none;
